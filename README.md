@@ -1,13 +1,101 @@
-# FreeGamesBot-for-Telegram
-<h2>A Bot that informs you the new free games available for PC </h2>
-<p>The first step is to Install telegram to your device phone.</p>
-<p>The Second step is to install Docker from <a href="https://www.docker.com/">here</a>.</p>
-<p>The third step, search BotFather in Telegram , type in BotFather chat the command /start , /newbot ,  name your bot and the BotFather willl gives you a token to acces the HTTP API , keep your token secure and store it safely.</p>
-<p>The next step is to Edit the document called docker-compose.yml in visual studio putting the token thats had given to you by de BotFather, you must copy the token and paste next to BOT_TOKEN=</p>
-<p>Copy all the documents (bot.py,docker-compose.yml with the modification of your token,Dockerfile and requirements.txt) and paste it on your PC in a new folder</p>
-<p>Then start the app Docker </p>
-<p>To turn on the bot, open power shell in the nwe folder and copy this command : docker compose up -d --build </p>
-<p>Now you can use the telegram will be running while docker is turn on</p>
-<p>For turn off just opne powershell on the folder and type docker compose down for restart docker compose up -d --build</p>
+
+
+  <h1>🎮 FreeGamesBot-for-Telegram</h1>
+  <p>A Telegram bot that notifies you about newly available <strong>free PC games</strong>.</p>
+
+  <hr />
+
+  <div class="card">
+    <h2>✅ Requirements</h2>
+    <p>Before starting, make sure you have:</p>
+    <ul>
+      <li><strong>Telegram</strong> installed on your phone/device</li>
+      <li><strong>Docker Desktop</strong> installed on your PC</li>
+    </ul>
+    <p>Download Docker here: <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a></p>
+  </div>
+
+  <div class="card">
+    <h2>🤖 Create your Telegram Bot</h2>
+    <ol>
+      <li>Open Telegram and search for <strong>BotFather</strong></li>
+      <li>Start the chat and type:
+        <ul>
+          <li><code>/start</code></li>
+          <li><code>/newbot</code></li>
+        </ul>
+      </li>
+      <li>Choose a name for your bot</li>
+      <li>BotFather will generate a token to access the Telegram HTTP API</li>
+    </ol>
+
+    <div class="warn">
+      <strong>⚠️ Important:</strong> Keep this token private and store it safely.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>⚙️ Configuration</h2>
+    <ol>
+      <li>Open <code>docker-compose.yml</code> using <strong>Visual Studio Code</strong></li>
+      <li>Find this line:</li>
+    </ol>
+    <pre><code>BOT_TOKEN=</code></pre>
+    <p>Paste your token after the <code>=</code>:</p>
+    <pre><code>BOT_TOKEN=YOUR_TOKEN_HERE</code></pre>
+  </div>
+
+  <div class="card">
+    <h2>📁 Project Setup</h2>
+    <ol>
+      <li>Create a new folder on your PC</li>
+      <li>Copy the following files into the folder:</li>
+    </ol>
+    <ul>
+      <li><code>bot.py</code></li>
+      <li><code>docker-compose.yml</code> (with your token already added)</li>
+      <li><code>Dockerfile</code></li>
+      <li><code>requirements.txt</code></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Run the Bot (Docker)</h2>
+    <ol>
+      <li>Start <strong>Docker Desktop</strong></li>
+      <li>Open <strong>PowerShell</strong> inside the project folder</li>
+      <li>Run the following command:</li>
+    </ol>
+    <pre><code>docker compose up -d --build</code></pre>
+    <p>✅ Your bot will run as long as Docker is running.</p>
+  </div>
+
+  <div class="card">
+    <h2>🛑 Stop / Restart</h2>
+    <h3>Stop the bot</h3>
+    <pre><code>docker compose down</code></pre>
+    <h3>Restart the bor</h3>
+    <pre><code>docker compose up -d --build</code></pre>
+
+  </div>
+
+  <div class="card">
+    <h2>📝 Notes</h2>
+    <ul>
+      <li>If you modify the code, rebuild the container using:</li>
+    </ul>
+    <pre><code>docker compose up -d --build</code></pre>
+    <p class="muted">Make sure your bot token is never shared publicly.</p>
+  </div>
+
+  <p><strong>Enjoy your free games notifications! 🎁🔥</strong></p>
+  <footer style="margin-top: 24px; text-align:center; color:#6b7280;">
+  Made with ❤️ by Verrase
+</footer>
+
+
+</body>
+</html>
+
 
 
