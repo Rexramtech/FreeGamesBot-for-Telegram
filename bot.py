@@ -318,7 +318,7 @@ async def cmd_free(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await db.commit()
 
     # Si está silenciado, igual dejamos consultar /free (es una consulta manual).
-    # Si prefieres bloquearlo, dímelo y lo cambiamos.
+    
 
     filtered = [(title, store, link) for _, title, store, link in items if store in stores]
 
@@ -483,4 +483,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
