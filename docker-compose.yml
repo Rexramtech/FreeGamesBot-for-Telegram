@@ -1,0 +1,9 @@
+services:
+  freegamesbot:
+    build: .
+    environment:
+      - BOT_TOKEN=put your token here
+      - POLL_SECONDS=900
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
