@@ -74,7 +74,7 @@
     <h2>🛑 Stop / Restart</h2>
     <h3>Stop the bot</h3>
     <pre><code>docker compose down</code></pre>
-    <h3>Restart the bor</h3>
+    <h3>Restart the bot</h3>
     <pre><code>docker compose up -d --build</code></pre>
 
   </div>
